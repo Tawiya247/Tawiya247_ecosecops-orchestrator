@@ -1,0 +1,48 @@
+﻿# ============================================================
+# EcoSecOps Orchestrator — .bobignore
+# Fichiers exclus de l indexation par IBM Bob 2.0
+# ============================================================
+
+# --- Secrets (CRITIQUE) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# --- Environnements virtuels ---
+venv/
+.venv/
+env/
+
+# --- Dependances Node ---
+node_modules/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Captures de session Bob ---
+bob_sessions/*.png
+bob_sessions/*.jpg
+bob_sessions/*.jpeg
+
+# --- Cache Python ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Artefacts de build ---
+build/
+dist/
+*.egg-info/
+htmlcov/
+.coverage
+
+# --- Fichiers temporaires ---
+tmp/
+temp/
+*.tmp
+*.bak

@@ -1,0 +1,63 @@
+﻿# ============================================================
+# EcoSecOps Orchestrator — .gitignore
+# REGLE CRITIQUE HACKATHON : ne jamais commiter de secrets
+# ============================================================
+
+# --- Secrets & Credentials (CRITIQUE) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets.json
+*.secret
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Node.js ---
+node_modules/
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Temporary files ---
+tmp/
+temp/
+*.tmp
+*.bak
